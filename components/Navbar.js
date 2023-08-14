@@ -18,7 +18,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className={`fixed w-full left-0 top-0 z-[1000]  bg-gray-900  text-gray-400 ${sticky?'md:bg-white/60 text-gray-900':'text-white'}`}>
+    <nav className={`fixed w-full left-0 top-0 z-[1000]  bg-gray-900  text-gray-400 ${sticky?'md:bg-white/60 text-gray-200':'text-white'}`}>
       <div className="">
         <div className="flex items-center font-medium justify-around">
           <div className="z-50 p-5 md:w-auto w-full flex justify-between">
