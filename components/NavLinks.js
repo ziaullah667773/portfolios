@@ -7,26 +7,23 @@ import { FiChevronUp, FiChevronDown } from "react-icons/fi";
 const NavLinks = () => {
   const [heading, setHeading] = useState("");
   const [subHeading, setSubHeading] = useState("");
-  const [activeHeading, setActiveHeading] = useState("");
-  const [activeSubHeading, setActiveSubHeading] = useState("");
 
   return (
     <>
       
       {links.map((link) => (
         <div key={link?.name}>
-          <div className="px-3 text-left md:cursor-pointer group " onClick={() => setActiveHeading(activeHeading === link.name ? "" : link.name)}>
+          <div className="px-3 text-left md:cursor-pointer group ">
             <h1
               className="py-7 flex justify-between items-center md:pr-0 pr-5 group"
-              // onClick={() => {
-              //   heading !== link.name ? setHeading(link.name) : setHeading("");
-              //   setSubHeading("");
-              // }}
+              onClick={() => {
+                heading !== link.name ? setHeading(link.name) : setHeading("");
+                setSubHeading("");
+              }}
             >
               {link.name}
               <span className="text-xl md:hidden inline">
-                {/* {heading === link.name ? <FiChevronUp /> : <FiChevronDown />} */}
-                {activeHeading === link.name ? <FiChevronUp /> : <FiChevronDown />}
+                {heading === link.name ? <FiChevronUp /> : <FiChevronDown />}
               </span>
               <span className="text-xl md:mt-1 md:ml-2  md:block hidden group-hover:rotate-180 ">
                 <FiChevronDown />
