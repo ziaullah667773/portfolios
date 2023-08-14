@@ -38,6 +38,19 @@ const Navbar = () => {
               About
               </Link>
             </li>
+            <li>
+              <Link href={"/portfolio"} className="py-7 px-3 inline-block">
+              Portfolio
+              </Link>
+            </li>  <li>
+              <Link href={"/about"} className="py-7 px-3 inline-block">
+              About
+              </Link>
+            </li>  <li>
+              <Link href={"/about"} className="py-7 px-3 inline-block">
+              About
+              </Link>
+            </li>
             <NavLinks />
             <li>
               <Link href={"/skills"} className="py-7 px-3 inline-block">
