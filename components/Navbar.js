@@ -23,8 +23,8 @@ const Navbar = () => {
         <div className="flex items-center font-medium justify-around">
           <div className="z-50 p-5 md:w-auto w-full flex justify-between">
             <h1 className="md:cursor-pointer h-9 text-3xl font-sans "><span className="text-white">Zia</span><span className="text-cyan-600">Ullah</span></h1>
-            <div className="text-3xl md:hidden text-white" onClick={() => setOpen(!open)}>
-              {open ? <AiOutlineClose /> : <FiMenu />}
+            <div className="text-3xl md:hidden " onClick={() => setOpen(!open)}>
+              {open ? <AiOutlineClose /> : <FiMenu className="text-white"/>}
             </div>
           </div>
           <ul className="md:flex hidden  items-center gap-8 font-sans">
