@@ -1,11 +1,15 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  background-color: black;
   padding: 6rem;
   min-height: 100vh;
+  
 }
+/* Custom scrollbar styles */
+
 
 .description {
   display: inherit;
