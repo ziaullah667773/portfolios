@@ -5,8 +5,8 @@ import { FiChevronUp, FiChevronDown } from "react-icons/fi";
 
 
 const NavLinks = () => {
-  // const [heading, setHeading] = useState("");
-  // const [subHeading, setSubHeading] = useState("");
+  const [heading, setHeading] = useState("");
+  const [subHeading, setSubHeading] = useState("");
   const [activeHeading, setActiveHeading] = useState("");
   const [activeSubHeading, setActiveSubHeading] = useState("");
 
