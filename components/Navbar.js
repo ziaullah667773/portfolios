@@ -72,6 +72,11 @@ const Navbar = () => {
                 About
               </Link>
             </li>
+            <li>
+              <Link href={"/portfolio"} className="py-7 px-3 inline-block">
+              Portfolio
+              </Link>
+            </li> 
             <NavLinks />
             
             <li>
